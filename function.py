@@ -125,7 +125,7 @@ def heatmap(gazepoints, dispsize, imagefile=None, alpha=0.5, savefilename=None, 
     """
 
     # IMAGE
-    fig, ax = draw_display(dispsize, imagefile=imagefile)
+    #fig, ax = draw_display(dispsize, imagefile=imagefile)
 
     # HEATMAP
     # Gaussian
@@ -171,11 +171,11 @@ def heatmap(gazepoints, dispsize, imagefile=None, alpha=0.5, savefilename=None, 
     lowbound = numpy.mean(heatmap[heatmap > 0])
     heatmap[heatmap < lowbound] = numpy.NaN
     # draw heatmap on top of image
-    ax.imshow(heatmap, cmap='jet', alpha=alpha)
+    #ax.imshow(heatmap, cmap='jet', alpha=alpha)
 
     # FINISH PLOT
     # invert the y axis, as (0,0) is top left on a display
-    ax.invert_yaxis()
+    #ax.invert_yaxis()
     # save the figure if a file name was provided
     if savefilename != None:
         fig.savefig(savefilename)
