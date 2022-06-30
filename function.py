@@ -4,6 +4,7 @@ import matplotlib
 from matplotlib import pyplot, image
 
 
+
 def draw_display(dispsize, imagefile=None):
     """Returns a matplotlib.pyplot Figure and its axes, with a size of
     dispsize, a black background colour, and optionally with an image drawn
